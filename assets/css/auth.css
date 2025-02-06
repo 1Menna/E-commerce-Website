@@ -1,0 +1,16 @@
+.form{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    border:3px solid #ead7dc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    
+    margin: 0px 40%;
+    padding: 50px 0px;
+
+    height: 200px;
+
+    text-align: center;
+}

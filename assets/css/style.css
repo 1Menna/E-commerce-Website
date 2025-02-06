@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dosis:wght@200..800&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Caveat", serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: black; 
+    /* background-color: #c8a7ad; */
+    
+}
+/* ________________________________________________________________________ */
+.navbar{ /*navbar-brand + ul-nav-links*/
+    display: flex; /*to make (navbar-brand)  next to (ul-nav-links)*/
+    justify-content:space-between;
+    color: #ae6ea8;
+    padding: 0.5rem 1rem;
+    height: 10px;
+}
+.navbar-brand img {
+    width: 95px;
+    height: 50px;
+    cursor: pointer;
+}
+.ul-nav-links {
+    display: flex;/* default is row next to them*/
+    list-style: none;
+}
+.ul-nav-links li {
+    margin: 0 1rem; /* make space between links*/
+    padding-top: 7px;
+    color: black;
+    cursor: pointer;
+}
+.ul-nav-links a {
+    color: black;
+    text-decoration: none; /*to remove underline*/
+}
+.ul-nav-links a:hover,p:hover {
+    color: #c8a7ad;
+}
+/*_____________________________________________________________________________*/
+/*_____________________________________________________________________________*/
+/*_____________________________________________________________________________*/
+.sub-menu-wrap{
+    display: none;
+    position: absolute;
+    top: 11%;
+    width: 100%;
+    right: 26%;
+    width:100px;
+    text-align: center;
+    border:3px solid black;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+}
+.sub-menu-wrap a:hover{
+    font-size: 30px;
+}
+.sub-menu-wrap.active{
+    display: flex;
+    flex-direction: column;
+}
+.sub-menu-wrap div a:hover{
+    color: #c8a7ad;
+}
+/*_____________________________________________________________________________*/
+/*_____________________________________________________________________________*/
+.start .come{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 230px;
+    left: 20px;
+}
+.start .come .ndcome{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+.start .come button{
+    font-family: "Dosis", serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 60px;
+    padding: 2px;
+    background-color: #3c3939;
+    border: 6px solid #3c3939;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.start .come button:hover{
+    background-color: #ffffff;
+    border: 6px solid white;
+    color: black;
+}
+/*_____________________________________________________________________________*/
+h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.recommended{
+    display:grid;
+    margin-left:10% ;
+    grid-template-columns:  17% 17% 17% 17% 17%;
+    gap: 10px;
+    
+}
+.recommended > div{
+    border: 2px solid #3c3939;
+    height: 300px;
+    transition: 1s;
+    cursor: pointer;
+}
+.recommended > div:hover{
+    height: 310px;
+    box-shadow: 10px 10px 30px black /* Adds shadow */
+}
+.recommended > div img{
+    margin: 25px;
+}
+
+.second{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+.second button,i{
+    background-color: transparent;
+    font-size: 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.second button:hover,.second i:hover{
+    width: 50px;
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10%;
+}
+    
+/*_____________________________________________________________________________*/
+.trending{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin-left:14% ;
+    gap: 10px;
+}
+.trending > div{
+    border: 2px solid #3c3939;
+    height: 300px;
+}
+.trending > div img{
+    margin: 20px;
+}
+.trending > div:hover{
+    height: 310px;
+    box-shadow: 10px 10px 30px black /* Adds shadow */
+}
+
+/*_____________________________________________________________________________*/
+.footer{
+    background-color: black;
+    color: #ffffff;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;    
+}
+.footer div{
+    margin-top: 10px;
+}
+.footer div i{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 50%; 
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.footer div i:hover{
+    background-color: black;
+    color: white;
+    width: 30px;
+}
+.footer .title{
+    font-size: 40px;
+}
+.footer div a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff; 
+    transition: 1s; 
+}
+.footer div a:hover{
+    font-size: 30px;  
+}
+.copyrigt p{
+    font-size: 15px;
+    font-family: "Dosis", serif;
+    font-weight: 300;
+}
+/*_____________________________________________________________________________*/
